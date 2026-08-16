@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formato Único de Hoja de Vida - Persona Natural</title>
+    <link rel="icon" href="img/Escudo de Colombia.png">
+</head>
+<body>
+
+
+    <img src="img/Escudo de Colombia.png" alt="Escudo de Colombia" width="100" height="100" align="left">
+
+    <h1 align="center">FORMATO ÚNICO</h1>
+    <h2 align="center">HOJA DE VIDA</h2>
+    <h3 align="center">Persona Natural</h3>
+    <p align="center"><small>(Leyes 190 de 1995, 489 y 443 de 1998)</small></p>
+
+    <br clear="all">
+
+
+    <table border="1" width="100%" cellpadding="5" cellspacing="0">
+        <tr>
+            <td colspan="4" bgcolor="lightgray" align="center">
+                <b>1. DATOS PERSONALES</b>
+            </td>
+        </tr>
+        <tr>
+            <td width="30%">
+                <label for="primer_apellido"><b>PRIMER APELLIDO</b></label><br>
+                <input type="text" id="primer_apellido" name="primer_apellido">
+            </td>
+            <td width="30%">
+                <label for="segundo_apellido"><b>SEGUNDO APELLIDO</b></label><br>
+                <input type="text" id="segundo_apellido" name="segundo_apellido">
+            </td>
+            <td colspan="2" width="40%">
+                <label for="nombres"><b>NOMBRES</b></label><br>
+                <input type="text" id="nombres" name="nombres">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <b>DOCUMENTO DE IDENTIFICACIÓN</b><br>
+                <input type="radio" name="tipo_doc" value="CC"> C.C.
+                <input type="radio" name="tipo_doc" value="CE"> C.E.
+                <input type="radio" name="tipo_doc" value="PAS"> PAS
+                <input type="radio" name="tipo_doc" value="PEP"> No.
+                <br><br>
+                <label for="num_doc">Número:</label>
+                <input type="text" id="num_doc" name="num_doc">
+            </td>
+            <td>
+                <b>SEXO</b><br>
+                <input type="radio" name="sexo" value="F"> F
+                <input type="radio" name="sexo" value="M"> M
+            </td>
+            <td>
+                <b>NACIONALIDAD</b><br>
+                <input type="radio" name="nacionalidad" value="COL"> COL.<br>
+                <input type="radio" name="nacionalidad" value="EXT"> EXTRANJERO<br><br>
+                <label for="pais"><b>PAÍS:</b></label><br>
+                <input type="text" id="pais" name="pais" size="15">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <b>LIBRETA MILITAR</b><br>
+                Clase: 
+                <input type="radio" name="libreta" value="Primera"> Primera clase
+                <input type="radio" name="libreta" value="Segunda"> Segunda clase
+                <label for="num_dm">Número D.M.:</label>
+                <input type="text" id="num_dm" name="num_dm" size="20">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <b>FECHA Y LUGAR DE NACIMIENTO</b><br><br>
+                <label for="fecha_nac">Fecha:</label>
+                <input type="date" id="fecha_nac" name="fecha_nac">
+                <label for="pais_nac">País:</label>
+                <input type="text" id="pais_nac" name="pais_nac" size="12">
+                <label for="depto_nac">Depto:</label>
+                <input type="text" id="depto_nac" name="depto_nac" size="12">
+                <label for="muni_nac">Municipio:</label>
+                <input type="text" id="muni_nac" name="muni_nac" size="12">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <b>DIRECCIÓN DE CORRESPONDENCIA</b><br><br>
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" size="30">
+                <label for="pais_corr">País:</label>
+                <input type="text" id="pais_corr" name="pais_corr" size="10">
+                <label for="depto_corr">Depto:</label>
+                <input type="text" id="depto_corr" name="depto_corr" size="10">
+                <br><br>
+                <label for="muni_corr">Municipio:</label>
+                <input type="text" id="muni_corr" name="muni_corr" size="12">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" size="12">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" size="25">
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <table border="1" width="100%" cellpadding="5" cellspacing="0">
+        <tr>
+            <td colspan="4" bgcolor="lightgray" align="center">
+                <b>2. FORMACIÓN ACADÉMICA</b>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" bgcolor="#f2f2f2">
+                <b>EDUCACIÓN BÁSICA Y MEDIA</b><br>
+                <small>MARQUE CON UNA X EL ÚLTIMO GRADO APROBADO</small>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <b>EDUCACIÓN BÁSICA:</b><br>
+                <input type="checkbox" name="edu_basica" value="primaria"> PRIMARIA
+                <input type="checkbox" name="edu_basica" value="secundaria"> SECUNDARIA
+                <input type="checkbox" name="edu_basica" value="media"> MEDIA
+            </td>
+            <td colspan="2">
+                <b>ÚLTIMO GRADO APROBADO:</b><br>
+                <select name="grado_aprobado">
+                    <option value="">-- Seleccione --</option>
+                    <option value="1">1o.</option>
+                    <option value="2">2o.</option>
+                    <option value="3">3o.</option>
+                    <option value="4">4o.</option>
+                    <option value="5">5o.</option>
+                    <option value="6">6o.</option>
+                    <option value="7">7o.</option>
+                    <option value="8">8o.</option>
+                    <option value="9">9o.</option>
+                    <option value="10">10o.</option>
+                    <option value="11">11o.</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label for="titulo_bachiller"><b>TÍTULO OBTENIDO:</b></label><br>
+                <input type="text" id="titulo_bachiller" name="titulo_bachiller" size="35">
+            </td>
+            <td colspan="2">
+                <b>FECHA DE GRADO:</b><br>
+                <label for="mes_grado">Mes:</label>
+                <input type="text" id="mes_grado" name="mes_grado" size="5">
+                <label for="anio_grado">Año:</label>
+                <input type="text" id="anio_grado" name="anio_grado" size="5">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" bgcolor="#f2f2f2">
+                <b>EDUCACIÓN SUPERIOR (PREGRADO Y POSTGRADO)</b>
+            </td>
+        </tr>
+        <tr align="center" bgcolor="#e6e6e6">
+            <td><b>MODALIDAD ACADÉMICA</b></td>
+            <td><b>No. SEMESTRES APROBADOS</b></td>
+            <td><b>GRADUADO (SI / NO)</b></td>
+            <td><b>NOMBRE DE LOS ESTUDIOS / TÍTULO OBTENIDO</b></td>
+        </tr>
+        <tr>
+            <td align="center">
+                <select name="modalidad_1">
+                    <option value="">-- Seleccione --</option>
+                    <option value="TC">Técnica</option>
+                    <option value="TL">Tecnológica</option>
+                    <option value="TE">Tecnológica Especializada</option>
+                    <option value="UN">Universitaria</option>
+                    <option value="ES">Especialización</option>
+                    <option value="MG">Maestría</option>
+                    <option value="DOC"> Doctorado</option>
+                </select>
+            </td>
+            <td align="center">
+                <input type="number" name="semestres_1" min="1" max="12">
+            </td>
+            <td align="center">
+                <input type="radio" name="graduado_1" value="SI"> SI
+                <input type="radio" name="graduado_1" value="NO"> NO
+            </td>
+            <td>
+                <input type="text" name="titulo_superior_1" size="30">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <b>TERMINACIÓN:</b>
+                <label for="mes_term_1">Mes:</label>
+                <input type="text" id="mes_term_1" name="mes_term_1" size="4">
+                <label for="anio_term_1">Año:</label>
+                <input type="text" id="anio_term_1" name="anio_term_1" size="6">
+            </td>
+            <td colspan="2">
+                <label for="tarjeta_prof_1"><b>No. DE TARJETA PROFESIONAL:</b></label>
+                <input type="text" id="tarjeta_prof_1" name="tarjeta_prof_1" size="15">
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    
+    <table border="1" width="100%" cellpadding="5" cellspacing="0">
+        <tr>
+            <td colspan="4" bgcolor="lightgray" align="center">
+                <b>3. EXPERIENCIA LABORAL</b>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" bgcolor="#e6e6e6">
+                <b>EMPLEO ACTUAL O CONTRATO VIGENTE</b>
+            </td>
+        </tr>
+        <tr>
+            <td width="40%">
+                <label for="empresa_1"><b>EMPRESA O ENTIDAD:</b></label><br>
+                <input type="text" id="empresa_1" name="empresa_1" size="25">
+            </td>
+            <td width="20%">
+                <b>SECTOR:</b><br>
+                <input type="radio" name="sector_1" value="PUBLICA"> Pública <br>
+                <input type="radio" name="sector_1" value="PRIVADA"> Privada
+            </td>
+            <td width="20%">
+                <label for="pais_emp_1"><b>PAÍS:</b></label><br>
+                <input type="text" id="pais_emp_1" name="pais_emp_1" size="12">
+            </td>
+            <td width="20%">
+                <label for="depto_emp_1"><b>DEPARTAMENTO:</b></label><br>
+                <input type="text" id="depto_emp_1" name="depto_emp_1" size="12">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label for="cargo_1"><b>CARGO O CONTRATO ACTUAL:</b></label><br>
+                <input type="text" id="cargo_1" name="cargo_1" size="30">
+            </td>
+            <td>
+                <label for="dep_1"><b>DEPENDENCIA:</b></label><br>
+                <input type="text" id="dep_1" name="dep_1" size="15">
+            </td>
+            <td>
+                <label for="dir_emp_1"><b>DIRECCIÓN:</b></label><br>
+                <input type="text" id="dir_emp_1" name="dir_emp_1" size="15">
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    
+    <table border="1" width="100%" cellpadding="5" cellspacing="0">
+        <tr>
+            <td colspan="3" bgcolor="lightgray" align="center">
+                <b>4. TIEMPO TOTAL DE EXPERIENCIA</b>
+            </td>
+        </tr>
+        <tr align="center" bgcolor="#e6e6e6">
+            <td><b>OCUPACIÓN</b></td>
+            <td><b>AÑOS</b></td>
+            <td><b>MESES</b></td>
+        </tr>
+        <tr>
+            <td>SERVIDOR PÚBLICO</td>
+            <td align="center"><input type="number" name="anos_pub" min="0" max="50"></td>
+            <td align="center"><input type="number" name="meses_pub" min="0" max="11"></td>
+        </tr>
+        <tr>
+            <td>EMPLEADO DEL SECTOR PRIVADO</td>
+            <td align="center"><input type="number" name="anos_priv" min="0" max="50"></td>
+            <td align="center"><input type="number" name="meses_priv" min="0" max="11"></td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <table border="1" width="100%" cellpadding="5" cellspacing="0">
+        <tr>
+            <td bgcolor="lightgray" align="center">
+                <b>5. FIRMA Y OBSERVACIONES</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p align="justify">
+                    <small>MANIFIESTO BAJO LA GRAVEDAD DEL JURAMENTO QUE LOS DATOS AQUÍ ANOTADOS SON VERACES.</small>
+                </p>
+                <label for="observaciones"><b>Observaciones del evaluador:</b></label><br>
+                <textarea id="observaciones" name="observaciones" rows="3" cols="70"></textarea>
+                <br><br><br>
+                ____________________________________________________<br>
+                <b>FIRMA DEL SERVIDOR PÚBLICO O CONTRATISTA</b>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <div align="center">
+        <input type="submit" value="Guardar Hoja de Vida">
+        <input type="reset" value="Limpiar Formulario">
+    </div>
+
+</body>
+</html>
